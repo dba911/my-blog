@@ -1,17 +1,22 @@
-h1 a, h2 a {
-  color: #F9EFB5;
+h1 a {
+  color: #D4E4D9;
   font-size: 40pt;
   text-align: center;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-
+h2 a {
+  color: #153B50;
+  font-size: 32pt;
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
 body {
   background-color: #F0DE8B;
   padding-left: ;
 }
 
 .page-header {
-  background-color: #D4E4D9;
+  background-color: #153B50;
   margin-top: 0;
   padding: 20px 20px 20px 40px;
 }
@@ -27,6 +32,7 @@ body {
 }
 
 h1, h2, h3, h4 {
+  color: #153B50;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
@@ -52,12 +58,12 @@ h1, h2, h3, h4 {
 }
 
 .post {
-  color: #2660A4;
+  color: #153B50;
   margin-bottom: 70px;
 }
 
 .post h2 a, .post h2 a: visited {
-  color: #2660A4;
+  color: #153B50;
 }
 
 .comment {
