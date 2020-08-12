@@ -2,12 +2,12 @@
 {% load static %}
 <html>
     <head>
-      <title>Django Girls blog</title>
+      <title>Dana's Diary</title>
 
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-      <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap"> 
       <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 
     </head>
@@ -19,8 +19,9 @@
             <div class="date">
               <p> published: {{post.published_date}} </p>
             </div>
-            <h2><a href="{% url 'post_detail' pk=post.pk %}"> {{post.title}} </a></h2>
+            <h1><a href="{% url 'post_detail' pk=post.pk %}"> {{post.title}} </a></h1>
             <p> {{post.text|linebreaksbr}} </p>
+            <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
           </div>
         {% endfor %}
       {% endblock %}
