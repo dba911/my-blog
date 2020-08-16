@@ -1,0 +1,88 @@
+h1 a {
+  color: #D4E4D9;
+  font-size: 40pt;
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+h2 a {
+  color: #153B50;
+  font-size: 32pt;
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+body {
+  background-color: #F1E196;
+}
+
+.page-header {
+  background-color: #153B50;
+  margin-top: 0;
+  padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a: visited, .page-header h1 a: active {
+  color: #FFBAA1;
+  font-size: 40pt;
+  text-decoration: none;
+}
+
+.content {
+  margin-left: 40px;
+}
+
+a {
+  color: #2660A4;
+  font-size: 11pt;
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.date, .date p {
+  color: #828282;
+  font-size: 12pt;
+}
+
+.save {
+  float: right;
+}
+
+.post-form textarea, .post-form input, .post-form p {
+  width: 100%;
+  color: #153B50;
+  font-size: 12pt;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.top-menu, .top-menu: hover, .top-menu: visited {
+  color: #F0DE8B;
+  float: right;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin-right: 20px;
+}
+
+p.top-menu {
+  color: #2660A4;
+}
+
+.post h2, .post h2 a, .post h2 a: visited {
+  color: #153B50;
+}
+
+.post {
+  color: #1E4E7A;
+  margin-bottom: 70px;
+  font-size: 15pt;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+.comment {
+  margin: 20px 0px 20px 20px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+a.btn {
+  font-size: 12pt;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
