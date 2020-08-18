@@ -7,17 +7,76 @@ h1 a {
 h2 a {
   color: #153B50;
   font-size: 32pt;
+  /* margin-left: 175px; */
   text-align: center;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 body {
-  background-color: #F1E196;
+  background-color: #F7EBAB;
 }
-
+ul {
+  list-style-type: none;
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  text-decoration: none;
+  padding: 5px 40px;
+  color: #D4E4D9;
+  border: 1px solid transparent;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  transition: 0.5s;
+  font-size: 12pt;
+}
+ul li a.home {
+  background-color: #D4E4D9;
+  color: #153B50;
+  position: absolute;
+  top: 12%;
+  left: 13%;
+}
+ul li a.blog {
+  position: absolute;
+  top: 12%;
+  left: 28%;
+}
+ul li a.about {
+  position: absolute;
+  top: 12%;
+  right: 28%;
+}
+ul li a.contact {
+  position: absolute;
+  top: 12%;
+  right: 13%;
+}
+ul li a:hover {
+  background-color: #D4E4D9;
+  color: #153B50;
+}
+.logo {
+  position: absolute;
+  top: 2%;
+  left: 40%;
+}
+.logo img {
+  float: left;
+  margin-top: 0;
+  width: 275px;
+  height: auto;
+}
 .page-header {
   background-color: #153B50;
   margin-top: 0;
   padding: 20px 20px 20px 40px;
+  height: 150px;
+  max-width: auto;
+  margin-bottom: 30px;
+
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a: visited, .page-header h1 a: active {
@@ -26,7 +85,7 @@ body {
   text-decoration: none;
 }
 
-.content {
+.content-container {
   margin-left: 40px;
 }
 
@@ -41,6 +100,7 @@ h1, h2, h3, h4, h5, h6, p {
 .date, .date p {
   color: #828282;
   font-size: 12pt;
+  margin-left: 50px;
 }
 
 .save {
@@ -55,28 +115,31 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .top-menu, .top-menu: hover, .top-menu: visited {
-  color: #F0DE8B;
+  color: #D4E4D9;
   float: right;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   margin-right: 20px;
 }
 
-p.top-menu {
-  color: #2660A4;
+p.top-menu, .top-menu a, .glyphicon-plus, .glyphicon-edit, .glyphicon-lock {
+  color: #D4E4D9;
 }
 
 .post h2, .post h2 a, .post h2 a: visited {
-  color: #153B50;
+  color: #fff;
+}
+
+.home {
+  margin-right: 20px;
 }
 
 .post {
   color: #1E4E7A;
   margin-bottom: 70px;
+  /* margin-left: 350px; */
   font-size: 15pt;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-
-
 .comment {
   margin: 20px 0px 20px 20px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
