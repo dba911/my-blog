@@ -2,59 +2,82 @@ h1 a {
   color: #D4E4D9;
   font-size: 40pt;
   text-align: center;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-h2 a {
-  color: #153B50;
-  font-size: 32pt;
-  /* margin-left: 175px; */
-  text-align: center;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 body {
-  background-color: #F7EBAB;
+  background-color: #F5E7A0;
+  margin: 0;
+  text-align: center;
 }
-ul {
+.container {
+  max-width: 1000px;
+  margin-left: 150px;
+  margin-right: auto;
+  padding: 24px;
+}
+header {
+  background-color: #153B50;
+  padding: 20px 20px 20px 40px;
+  height: 180px;
+  max-width: auto;
+  margin-bottom: 30px;
+}
+main {
+  background-color: #F9EFB5;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+}
+footer {
+  border-top: 2px solid #153B50;
+  height: 50px;
+}
+#admin-menu {
   list-style-type: none;
-  float: right;
-  margin-top: 15px;
-  margin-right: 20px;
 }
-ul li {
+#admin-menu li {
   display: inline-block;
 }
-ul li a {
+#admin-menu li a{
   text-decoration: none;
-  padding: 5px 40px;
+  font-size: 13pt;
+  color: #153B50;
+  font-family: 'Montserrat', sans-serif;
+  padding: 7px 95px 7px 95px;
+  position: sticky;
+  top: 17%;
+  width: 100%;
+}
+#admin-menu li a:hover {
+  background-color: #153B50;
+  color: #F5E7A0;
+}
+.admin-menu, .admin-menu a, .gylphicon glyphicon-plus, .glyphicon glyphicon-edit {
+  color: #153B50;
+}
+#navbar {
+  list-style-type: none;
+}
+#navbar li {
+  display: inline-block;
+  margin-top: 95px;
+  text-align: center;
+}
+#navbar li a {
+  text-decoration: none;
+  padding: 5px 80px;
   color: #D4E4D9;
   border: 1px solid transparent;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Caveat', cursive;
   transition: 0.5s;
-  font-size: 12pt;
+  font-size: 18pt;
+  position: relative;
 }
-ul li a.home {
+#navbar li a.home {
   background-color: #D4E4D9;
   color: #153B50;
-  position: absolute;
-  top: 12%;
-  left: 13%;
 }
-ul li a.blog {
-  position: absolute;
-  top: 12%;
-  left: 28%;
-}
-ul li a.about {
-  position: absolute;
-  top: 12%;
-  right: 28%;
-}
-ul li a.contact {
-  position: absolute;
-  top: 12%;
-  right: 13%;
-}
-ul li a:hover {
+#navbar li a:hover {
   background-color: #D4E4D9;
   color: #153B50;
 }
@@ -69,83 +92,94 @@ ul li a:hover {
   width: 275px;
   height: auto;
 }
-.page-header {
-  background-color: #153B50;
-  margin-top: 0;
-  padding: 20px 20px 20px 40px;
-  height: 150px;
-  max-width: auto;
-  margin-bottom: 30px;
-
-}
-
-.page-header h1, .page-header h1 a, .page-header h1 a: visited, .page-header h1 a: active {
-  color: #FFBAA1;
-  font-size: 40pt;
-  text-decoration: none;
-}
-
-.content-container {
-  margin-left: 40px;
-}
-
 a {
   color: #2660A4;
   font-size: 11pt;
 }
-h1, h2, h3, h4, h5, h6, p {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Montserrat', sans-serif;
 }
-
-.date, .date p {
-  color: #828282;
-  font-size: 12pt;
-  margin-left: 50px;
+h2 {
+  color: #153B50;
 }
-
+.about h3 {
+  color: #153B50;
+}
 .save {
   float: right;
 }
-
 .post-form textarea, .post-form input, .post-form p {
   width: 100%;
   color: #153B50;
   font-size: 12pt;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
-
-.top-menu, .top-menu: hover, .top-menu: visited {
-  color: #D4E4D9;
-  float: right;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  margin-right: 20px;
+.post-form {
+  color: #153B50;
+  text-align: center;
 }
-
-p.top-menu, .top-menu a, .glyphicon-plus, .glyphicon-edit, .glyphicon-lock {
-  color: #D4E4D9;
+.post h2, .post h2 a {
+  color: #153B50;
+  font-size: 30pt;
+  margin-bottom: 20px;
 }
-
-.post h2, .post h2 a, .post h2 a: visited {
-  color: #fff;
-}
-
-.home {
-  margin-right: 20px;
-}
-
-.post {
+.post p {
   color: #1E4E7A;
-  margin-bottom: 70px;
-  /* margin-left: 350px; */
-  font-size: 15pt;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18pt;
+  text-align: center;
+}
+.post {
+  margin-bottom: 60px;
+}
+.date, .date p, p.date {
+  font-family: 'Montserrat', sans-serif;
+  color: #828282;
+  font-size: 10pt;
+}
+.post .date {
+  margin-top: 10px;
 }
 .comment {
-  margin: 20px 0px 20px 20px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
 }
-
+.comment .date {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.comment p {
+  color: #1E4E7A;
+}
+strong {
+  color: #153B50;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12pt;
+}
+h2.upload {
+  color: #153B50;
+}
 a.btn {
   font-size: 12pt;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: #1E4E7A;
+  float: left;
+}
+button, button.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11pt;
+  color: #1E4E7A;
+}
+.contact {
+  text-align: left;
+  padding-left: 100px;
+}
+.contact a img {
+  width: 85px;
+}
+.contact a {
+  padding: 60px;
+}
+.portrait {
+  border-radius: 50%;
+  border: 0.5px solid #153B50;
 }

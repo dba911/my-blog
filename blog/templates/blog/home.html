@@ -7,25 +7,32 @@
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 
     </head>
 
     <body>
       {% block content %}
+      <h2>Hi there!</h2> <br><br>
+      {% block posts %}
+      {% endblock %}
         {% for post in posts %}
+        <div id="post-list" name="post-list">
+        <a name="post-list"/>
           <div class="post">
             <div class="date">
               <p> published: {{post.published_date}} </p>
             </div>
             {% if post.photo %}
-              <img src="{{ post.photo.url }}" alt="{{ post.title }}" style="width: 400px;">
+              <img src="{{ post.photo.url }}" alt="{{ post.title }}" style="width: 500px;">
             {% endif %}
             <h2><a href="{% url 'post_detail' pk=post.pk %}"> {{post.title}} </a></h2>
             <p> {{post.text|linebreaksbr}} </p>
-            <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count|linebreaksbr }}</a>
+            <a href="{% url 'post_detail' pk=post.pk %}" class="cmts">Comments: {{ post.comments.count|linebreaksbr }}</a>
           </div>
+        </div>
         {% endfor %}
       {% endblock %}
     </body>

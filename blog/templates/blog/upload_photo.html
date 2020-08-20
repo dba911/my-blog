@@ -1,10 +1,10 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-  <h2>New Post</h2>
-  <form method="POST" enctype="multipart/form-data">
+  <h2 class="upload">New Post</h2>
+  <form method="POST" enctype="multipart/form-data" class="post-form">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit" class="btn btn-primary">Upload</button>
+    <button type="submit" class="save btn btn-default">Upload</button>
   </form>
 {% endblock %}
