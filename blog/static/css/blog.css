@@ -36,7 +36,7 @@ footer {
 }
 #admin-menu {
   list-style-type: none;
-  width: auto;
+  width: 100%;
 }
 #admin-menu li {
   display: inline-block;
@@ -63,12 +63,12 @@ footer {
 #navbar {
   list-style-type: none;
   text-align: center;
-  width: auto;
+  width: 100%;
 }
 #navbar li {
   display: inline-block;
   text-align: center;
-  padding: 1rem 2rem 0rem;
+  padding: 1rem 1rem 0rem;
 }
 #navbar li a {
   text-decoration: none;
