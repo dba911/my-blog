@@ -68,7 +68,7 @@ footer {
 #navbar li {
   display: inline-block;
   text-align: center;
-  padding: 1rem 3rem 0rem;
+  padding: 1rem 2rem 0rem;
 }
 #navbar li a {
   text-decoration: none;
@@ -91,7 +91,7 @@ footer {
   text-align: center;
 }
 .logo img {
-  width: 30%;
+  width: 35%;
   margin: 0 auto;
 }
 a {
@@ -150,7 +150,7 @@ h2 {
   font-size: 11pt;
 }
 .post img.cover {
-  width: 50%;
+  width: 80%;
   border: 1px solid #153B50;
 }
 .comment {
