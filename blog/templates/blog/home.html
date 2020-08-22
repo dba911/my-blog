@@ -16,8 +16,6 @@
     <body>
       {% block content %}
       <h2>Hi there!</h2> <br><br>
-      {% block posts %}
-      {% endblock %}
         {% for post in posts %}
         <div id="post-list" name="post-list">
         <a name="post-list"/>
@@ -26,7 +24,7 @@
               <p> published: {{post.published_date}} </p>
             </div>
             {% if post.photo %}
-              <img src="{{ post.photo.url }}" alt="{{ post.title }}" style="width: 500px;">
+              <img src="{{ post.photo.url }}" alt="{{ post.title }}" class="cover">
             {% endif %}
             <h2><a href="{% url 'post_detail' pk=post.pk %}"> {{post.title}} </a></h2>
             <p> {{post.text|linebreaksbr}} </p>

@@ -8,45 +8,49 @@ body {
   background-color: #F5E7A0;
   margin: 0;
   text-align: center;
-}
-.container {
-  max-width: 1000px;
-  margin-left: 150px;
-  margin-right: auto;
-  padding: 24px;
+  display: grid;
+  grid-template-rows: auto auto 7rem;
+  grid-template-areas:
+    "head"
+    "main"
+    "foot";
+  grid-gap: 2rem;
 }
 header {
+  grid-area: head;
   background-color: #153B50;
-  padding: 20px 20px 20px 40px;
-  height: 180px;
-  max-width: auto;
-  margin-bottom: 30px;
 }
 main {
+  grid-area: main;
   background-color: #F9EFB5;
-  margin-left: 200px;
-  margin-right: 200px;
-  text-align: center;
+  margin: auto;
+}
+main .row {
+  display: flex;
+  justify-content: center;
 }
 footer {
+  grid-area: foot;
+  align-self: center;
   border-top: 2px solid #153B50;
-  height: 50px;
 }
 #admin-menu {
   list-style-type: none;
+  width: auto;
 }
 #admin-menu li {
   display: inline-block;
+  float: none;
+  padding: 2rem 6rem 0rem;
 }
 #admin-menu li a{
   text-decoration: none;
-  font-size: 13pt;
+  font-size: 14pt;
   color: #153B50;
   font-family: 'Montserrat', sans-serif;
-  padding: 7px 95px 7px 95px;
-  position: sticky;
-  top: 17%;
-  width: 100%;
+  padding: 0.5rem 5rem;
+  border: 1px solid transparent;
+  transition: 0.5s;
 }
 #admin-menu li a:hover {
   background-color: #153B50;
@@ -54,24 +58,26 @@ footer {
 }
 .admin-menu, .admin-menu a, .gylphicon glyphicon-plus, .glyphicon glyphicon-edit {
   color: #153B50;
+  font-size: 12pt;
 }
 #navbar {
   list-style-type: none;
+  text-align: center;
+  width: auto;
 }
 #navbar li {
   display: inline-block;
-  margin-top: 95px;
   text-align: center;
+  padding: 1rem 3rem 0rem;
 }
 #navbar li a {
   text-decoration: none;
-  padding: 5px 80px;
-  color: #D4E4D9;
-  border: 1px solid transparent;
-  font-family: 'Caveat', cursive;
-  transition: 0.5s;
   font-size: 18pt;
-  position: relative;
+  color: #D4E4D9;
+  font-family: 'Caveat', cursive;
+  padding: 0.5rem 6rem;
+  border: 1px solid transparent;
+  transition: 0.5s;
 }
 #navbar li a.home {
   background-color: #D4E4D9;
@@ -82,15 +88,11 @@ footer {
   color: #153B50;
 }
 .logo {
-  position: absolute;
-  top: 2%;
-  left: 40%;
+  text-align: center;
 }
 .logo img {
-  float: left;
-  margin-top: 0;
-  width: 275px;
-  height: auto;
+  width: 30%;
+  margin: 0 auto;
 }
 a {
   color: #2660A4;
@@ -101,6 +103,10 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 h2 {
   color: #153B50;
+}
+.hr {
+  color: #153B50;
+  size: 2px;
 }
 .about h3 {
   color: #153B50;
@@ -121,31 +127,39 @@ h2 {
 .post h2, .post h2 a {
   color: #153B50;
   font-size: 30pt;
-  margin-bottom: 20px;
-}
-.post p {
-  color: #1E4E7A;
-  font-size: 18pt;
+  margin-bottom: 3%;
   text-align: center;
 }
+.post p {
+  margin-top: 1rem;
+  color: #1E4E7A;
+  font-size: 18pt;
+}
 .post {
-  margin-bottom: 60px;
+  margin-bottom: 8rem;
 }
 .date, .date p, p.date {
   font-family: 'Montserrat', sans-serif;
   color: #828282;
   font-size: 10pt;
 }
-.post .date {
-  margin-top: 10px;
+.post-date {
+  margin-top: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #828282;
+  font-size: 11pt;
+}
+.post img.cover {
+  width: 100%;
+  border: 1px solid #153B50;
 }
 .comment {
   font-family: 'Montserrat', sans-serif;
   text-align: left;
 }
 .comment .date {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
 .comment p {
   color: #1E4E7A;
@@ -170,14 +184,13 @@ button, button.btn {
   color: #1E4E7A;
 }
 .contact {
-  text-align: left;
-  padding-left: 100px;
+  margin: 5rem 0rem;
 }
 .contact a img {
-  width: 85px;
+  width: 12%;
 }
 .contact a {
-  padding: 60px;
+  padding: 5rem;
 }
 .portrait {
   border-radius: 50%;
