@@ -34,36 +34,10 @@ footer {
   align-self: center;
   border-top: 2px solid #153B50;
 }
-#admin-menu {
-  list-style-type: none;
-  width: 100%;
-}
-#admin-menu li {
-  display: inline-block;
-  float: none;
-  padding: 2rem 6rem 0rem;
-}
-#admin-menu li a{
-  text-decoration: none;
-  font-size: 14pt;
-  color: #153B50;
-  font-family: 'Montserrat', sans-serif;
-  padding: 0.5rem 5rem;
-  border: 1px solid transparent;
-  transition: 0.5s;
-}
-#admin-menu li a:hover {
-  background-color: #153B50;
-  color: #F5E7A0;
-}
-.admin-menu, .admin-menu a, .gylphicon glyphicon-plus, .glyphicon glyphicon-edit {
-  color: #153B50;
-  font-size: 12pt;
-}
 #navbar {
   list-style-type: none;
   text-align: center;
-  width: 100%;
+  width: auto;
 }
 #navbar li {
   display: inline-block;
@@ -75,7 +49,7 @@ footer {
   font-size: 18pt;
   color: #D4E4D9;
   font-family: 'Caveat', cursive;
-  padding: 0.5rem 6rem;
+  padding: 0.5rem 4rem;
   border: 1px solid transparent;
   transition: 0.5s;
 }
@@ -86,6 +60,32 @@ footer {
 #navbar li a:hover {
   background-color: #D4E4D9;
   color: #153B50;
+}
+#admin-menu {
+  list-style-type: none;
+  width: auto;
+}
+#admin-menu li {
+  display: inline-block;
+  float: none;
+  padding: 1.5rem 4rem 0rem;
+}
+#admin-menu li a{
+  text-decoration: none;
+  font-size: 14pt;
+  color: #153B50;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.5rem 2rem;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
+#admin-menu li a:hover {
+  background-color: #153B50;
+  color: #F5E7A0;
+}
+.admin-menu, .admin-menu a, .gylphicon glyphicon-plus, .glyphicon glyphicon-edit {
+  color: #153B50;
+  font-size: 12pt;
 }
 .logo {
   text-align: center;
