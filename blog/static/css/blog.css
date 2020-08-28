@@ -248,6 +248,7 @@ a.btn {
 #blog-btn {
   font-size: 18pt;
   float: right;
+  margin-bottom: 3rem;
 }
 button, button.btn {
   font-family: 'Open Sans Condensed', sans-serif;
