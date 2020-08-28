@@ -58,11 +58,9 @@ img.home-photo {
   opacity: 1;
 }
 .intro {
-  position: absolute;
+  position: relative;
   margin: 0 auto;
-  left: 35%;
-  top: 2%;
-  width: 60%;
+  width: 90%;
 }
 .intro h2 {
   text-align: justify;
@@ -165,6 +163,7 @@ h2 {
   margin-top: 1rem;
   color: #3C7595;
   font-size: 20pt;
+  text-align: justify;
 }
 .post {
   margin-bottom: 8rem;
