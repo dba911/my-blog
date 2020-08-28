@@ -8,8 +8,7 @@
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Special+Elite&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 
     </head>
@@ -17,26 +16,33 @@
     <body>
       <header>
         <div class="container">
-            <div class="logo">
-              <a href="/"><img src="/static/logo.png"></a>
-            </div>
-            <ul id="navbar">
-              <li><a href="/" class="home">Home</a></li>
-              <li><a href="/#post-list">Blog</a></li>
-              <li><a href="{% url 'about' %}">About</a></li>
-              <li><a href="{% url 'contact' %}">Contact</a></li>
-            </ul>
+          <div class="logo">
+            <a href="/"><img src="/static/logo.png"></a>
           </div>
+        </div>
       </header>
+
+      <nav>
+        <ul id="navbar">
+          <li><a href="/" class="home">Home</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+      </nav>
 
       <main>
         <article class="container">
-        <div class="row">
+          <div class="home">
+            {% block home %}
+            {% endblock %}
+          </div>
+          <div class="row">
             <div class="col-md-8">
             {% block content %}
             {% endblock %}
             </div>
-        </div>
+          </div>
         </article>
       </main>
 

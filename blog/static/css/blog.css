@@ -1,28 +1,40 @@
-h1 a {
+/* h1 a {
   color: #D4E4D9;
   font-size: 40pt;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+} */
+h1 {
+  color: #32607B;
 }
 body {
-  background-color: #F5E7A0;
+  background-color: #ECD6B4;
   margin: 0;
   text-align: center;
   display: grid;
-  grid-template-rows: auto auto 7rem;
+  grid-template-rows: auto auto auto 7rem;
   grid-template-areas:
     "head"
+    "nav"
     "main"
     "foot";
-  grid-gap: 2rem;
+  grid-gap: 0rem 2rem;
 }
 header {
   grid-area: head;
-  background-color: #153B50;
+  background-color: #376A87;
+}
+nav {
+  grid-area: nav;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #3C7595;
+  z-index: 300;
 }
 main {
   grid-area: main;
-  background-color: #F9EFB5;
+  background-color: #F1E0C7;
   margin: auto;
 }
 main .row {
@@ -32,11 +44,33 @@ main .row {
 footer {
   grid-area: foot;
   align-self: center;
-  border-top: 2px solid #153B50;
+  border-top: 2px solid #376A87;
+}
+.homepage {
+  display: inline-block;
+  margin: auto;
+  position: relative;
+}
+img.home-photo {
+  width: 55%;
+  margin: 1rem 0rem 2rem;
+  float: left;
+  opacity: 1;
+}
+.intro {
+  position: absolute;
+  margin: 0 auto;
+  left: 35%;
+  top: 2%;
+  width: 60%;
+}
+.intro h2 {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 30pt;
 }
 #navbar {
   list-style-type: none;
-  text-align: center;
   width: auto;
 }
 #navbar li {
@@ -46,20 +80,20 @@ footer {
 }
 #navbar li a {
   text-decoration: none;
-  font-size: 18pt;
-  color: #D4E4D9;
-  font-family: 'Caveat', cursive;
-  padding: 0.5rem 4rem;
+  font-size: 16pt;
+  color: #9CAFB7;
+  font-family: 'Special Elite', cursive;
+  padding: 0.7rem 4rem;
   border: 1px solid transparent;
-  transition: 0.5s;
+  transition: 0.5s ease all;
 }
 #navbar li a.home {
-  background-color: #D4E4D9;
-  color: #153B50;
+  background-color: #9CAFB7;
+  color: #3C7595;
 }
 #navbar li a:hover {
-  background-color: #D4E4D9;
-  color: #153B50;
+  background-color: #9CAFB7;
+  color: #3C7595;
 }
 #admin-menu {
   list-style-type: none;
@@ -72,89 +106,119 @@ footer {
 }
 #admin-menu li a{
   text-decoration: none;
-  font-size: 14pt;
-  color: #153B50;
-  font-family: 'Montserrat', sans-serif;
-  padding: 0.5rem 2rem;
+  font-size: 15pt;
+  color: #376A87;
+  font-family: 'Special Elite', cursive;
+  padding: 0.7rem 2rem;
   border: 1px solid transparent;
-  transition: 0.5s;
+  transition: 0.5s ease all;
 }
 #admin-menu li a:hover {
-  background-color: #153B50;
-  color: #F5E7A0;
+  background-color: #376A87;
+  color: #ECD6B4;
 }
 .admin-menu, .admin-menu a, .gylphicon glyphicon-plus, .glyphicon glyphicon-edit {
-  color: #153B50;
-  font-size: 12pt;
+  color: #376A87;
+  font-size: 14pt;
 }
 .logo {
   text-align: center;
 }
 .logo img {
-  width: 35%;
+  width: 40%;
   margin: 0 auto;
 }
 a {
-  color: #2660A4;
-  font-size: 11pt;
+  color: #3C7595;
+  font-size: 14pt;
 }
 h1, h2, h3, h4, h5, h6, p, a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 h2 {
-  color: #153B50;
+  color: #376A87;
+  font-size:
 }
-.hr {
-  color: #153B50;
-  size: 2px;
+.about {
+  margin-top: 2rem;
 }
 .about h3 {
-  color: #153B50;
+  color: #32607B;
 }
 .save {
   float: right;
 }
 .post-form textarea, .post-form input, .post-form p {
   width: 100%;
-  color: #153B50;
-  font-size: 12pt;
-  font-family: 'Montserrat', sans-serif;
-}
-.post-form {
-  color: #153B50;
-  text-align: center;
+  color: #32607B;
+  font-size: 16pt;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 .post h2, .post h2 a {
-  color: #153B50;
+  font-family: 'Special Elite', cursive;
+  color: #32607B;
   font-size: 30pt;
   margin-bottom: 3%;
   text-align: center;
 }
 .post p {
   margin-top: 1rem;
-  color: #1E4E7A;
-  font-size: 18pt;
+  color: #3C7595;
+  font-size: 20pt;
 }
 .post {
   margin-bottom: 8rem;
 }
 .date, .date p, p.date {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   color: #828282;
-  font-size: 10pt;
+  font-size: 12pt;
 }
 .post-date {
   margin-top: 3rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   color: #828282;
-  font-size: 11pt;
+  font-size: 14pt;
+}
+.box {
+  display: inline-block;
+  position: relative;
+}
+.box .title {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 40%;
+  text-align: center;
+  width: 60%;
+}
+.title h2 a {
+  color: #F1E0C7;
+  text-shadow: 0.25rem 0.2rem #32607B;
+  font-family: 'Special Elite', cursive;
 }
 .post img.cover {
-  width: 80%;
-  border: 1px solid #153B50;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  opacity: 0.75;
+}
+.post:hover .cover {
+  opacity: 0.3;
+}
+.post:hover .title h2 a{
+  color: #32607B;
+  text-shadow: 0.25rem 0.2rem #F1E0C7;
+}
+.photo {
+  width: 100%;
+  height: auto;
+  border: 1px solid #32607B;
 }
 .comment {
-  font-family: 'Montserrat', sans-serif;
   text-align: left;
 }
 .comment .date {
@@ -162,37 +226,48 @@ h2 {
   margin-bottom: 2%;
 }
 .comment p {
-  color: #1E4E7A;
+  color: #3C7595;
+  font-size: 14pt;
 }
-strong {
-  color: #153B50;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12pt;
+p strong {
+  color: #32607B;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16pt;
 }
 h2.upload {
-  color: #153B50;
+  color: #32607B;
+  font-size: 30pt;
 }
 a.btn {
-  font-size: 12pt;
-  font-family: 'Montserrat', sans-serif;
-  color: #1E4E7A;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #3C7595;
+}
+#cmt-btn {
+  font-size: 16pt;
   float: left;
 }
+#blog-btn {
+  font-size: 18pt;
+  float: right;
+}
 button, button.btn {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 11pt;
-  color: #1E4E7A;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14pt;
+  color: #3C7595;
+}
+.blog-btn {
+  float: right;
 }
 .contact {
   margin: 5rem 0rem;
 }
 .contact a img {
-  width: 12%;
+  width: 14%;
 }
 .contact a {
   padding: 5rem;
 }
 .portrait {
   border-radius: 50%;
-  border: 0.5px solid #153B50;
+  border: 0.5px solid #32607B;
 }

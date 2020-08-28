@@ -5,7 +5,29 @@
  <html>
  <body>
   {% block content %}
-     <h2>This is the BLOG page.</h2>
+    {% for post in posts %}
+    <div id="post-list" name="post-list">
+    <a name="post-list"/>
+      <div class="post">
+        <div class="date">
+          <p> published: {{post.published_date}} </p>
+        </div>
+        {% if post.photo %}
+          <div class="box">
+            <a href="{% url 'post_detail' pk=post.pk %}" class="cover-link"><img src="{{ post.photo.url }}"
+            alt="{{ post.title }}" class="cover"></a>
+            <div class="title">
+              <h2><a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h2>
+            </div>
+          </div>
+        {% else %}
+          <h2><a href="{% url 'post_detail' pk=post.pk %}"> {{post.title}} </a></h2>
+        {% endif %}
+        <br><br>
+        <a href="{% url 'post_detail' pk=post.pk %}" class="cmts">Comments: {{ post.comments.count|linebreaksbr }}</a>
+      </div>
+    </div>
+    {% endfor %}
   {% endblock %}
  </body>
  </html>
