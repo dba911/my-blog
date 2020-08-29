@@ -152,7 +152,7 @@ h2 {
 .post h2, .post h2 a {
   font-family: 'Special Elite', cursive;
   color: #32607B;
-  font-size: 30pt;
+  font-size: 36pt;
   margin-bottom: 3%;
   text-align: center;
 }
@@ -177,6 +177,10 @@ h2 {
 }
 .post-text {
   text-align: justify;
+}
+.post-text a {
+  font-size: 20pt;
+  color: #4688AF;
 }
 .box {
   display: inline-block;
