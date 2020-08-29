@@ -67,6 +67,12 @@ img.home-photo {
   line-height: 1.5;
   font-size: 30pt;
 }
+.intro a {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 30pt;
+  color: #4688AF;
+}
 #navbar {
   list-style-type: none;
   width: auto;
