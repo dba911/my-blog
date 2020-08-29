@@ -20,7 +20,7 @@ class="glyphicon glyphicon-remove"></span></a>
           <img src="{{ post.photo.url }}" alt="{{ post.title }}" class="photo">
           <br><br>
         {% endif %}
-        <p>{{ post.text|linebreaksbr }}</p>
+        <p class="post-text">{{ post.text|linebreaksbr }}</p>
     </div>
     <a id="cmt-btn" class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
     <br><br>

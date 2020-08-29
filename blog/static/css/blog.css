@@ -123,7 +123,7 @@ img.home-photo {
   text-align: center;
 }
 .logo img {
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
 }
 a {
@@ -163,7 +163,6 @@ h2 {
   margin-top: 1rem;
   color: #3C7595;
   font-size: 20pt;
-  text-align: justify;
 }
 .post {
   margin-bottom: 8rem;
@@ -178,6 +177,9 @@ h2 {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #828282;
   font-size: 14pt;
+}
+.post-text {
+  text-align: justify;
 }
 .box {
   display: inline-block;
