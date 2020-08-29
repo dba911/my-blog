@@ -33,7 +33,7 @@ class="glyphicon glyphicon-remove"></span></a>
         <p>{{ comment.text|linebreaks }}</p>
         {% empty %}
         <br>
-        <p>No comments here yet</p>
-        </div>
+        <p id="no-cmt">No comments here yet</p>
+      </div>
     {% endfor %}
 {% endblock %}

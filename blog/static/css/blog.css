@@ -85,10 +85,6 @@ img.home-photo {
   border: 1px solid transparent;
   transition: 0.5s ease all;
 }
-#navbar li a.home {
-  background-color: #F1E0C7;
-  color: #3C7595;
-}
 #navbar li a:hover {
   background-color: #F1E0C7;
   color: #3C7595;
@@ -142,6 +138,7 @@ h2 {
 }
 .about h3 {
   color: #32607B;
+  font-size: 22pt;
 }
 .save {
   float: right;
@@ -198,6 +195,7 @@ h2 {
   color: #F1E0C7;
   text-shadow: 0.25rem 0.2rem #32607B;
   font-family: 'Special Elite', cursive;
+  font-size: 36pt;
 }
 .post img.cover {
   -webkit-filter: blur(2px);
@@ -229,6 +227,11 @@ h2 {
 .comment p {
   color: #3C7595;
   font-size: 14pt;
+}
+#no-cmt {
+    color: #3C7595;
+    font-size: 14pt;
+    margin-bottom: 2rem;
 }
 p strong {
   color: #32607B;
