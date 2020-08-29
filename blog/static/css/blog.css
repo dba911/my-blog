@@ -79,18 +79,18 @@ img.home-photo {
 #navbar li a {
   text-decoration: none;
   font-size: 16pt;
-  color: #9CAFB7;
+  color: #F1E0C7;
   font-family: 'Special Elite', cursive;
   padding: 0.7rem 4rem;
   border: 1px solid transparent;
   transition: 0.5s ease all;
 }
 #navbar li a.home {
-  background-color: #9CAFB7;
+  background-color: #F1E0C7;
   color: #3C7595;
 }
 #navbar li a:hover {
-  background-color: #9CAFB7;
+  background-color: #F1E0C7;
   color: #3C7595;
 }
 #admin-menu {
