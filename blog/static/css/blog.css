@@ -1,9 +1,3 @@
-/* h1 a {
-  color: #D4E4D9;
-  font-size: 40pt;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-} */
 h1 {
   color: #32607B;
 }
@@ -50,12 +44,6 @@ footer {
   display: inline-block;
   margin: auto;
   position: relative;
-}
-img.home-photo {
-  width: 55%;
-  margin: 1rem 0rem 0rem;
-  float: left;
-  opacity: 1;
 }
 .intro {
   position: relative;
@@ -118,7 +106,7 @@ img.home-photo {
 }
 .admin-menu, .admin-menu a, .gylphicon glyphicon-plus, .glyphicon glyphicon-edit {
   color: #376A87;
-  font-size: 14pt;
+  font-size: 16pt;
 }
 .logo {
   text-align: center;
@@ -259,18 +247,26 @@ a.btn {
   font-size: 16pt;
   float: left;
 }
-#blog-btn {
-  font-size: 18pt;
-  float: right;
-  margin-bottom: 3rem;
-}
 button, button.btn {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 14pt;
   color: #3C7595;
 }
-.blog-btn {
-  float: right;
+.button {
+  border: 1px solid #3C7595;
+  padding: 1.25rem 6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18pt;
+  margin-bottom: 1.5rem;
+}
+.button1 {
+  background-color: #F1E0C7;
+}
+.button1:hover {
+  background-color: #3C7595;
+  color: #F1E0C7;
 }
 .contact {
   margin: 5rem 0rem;

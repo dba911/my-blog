@@ -14,7 +14,6 @@
     <body>
       {% block home %}
         <div class="homepage">
-          <!-- <img src="/static/homepage.png" alt="" class="home-photo"> -->
           <div class="intro">
             <h2><strong>Hi there!</strong><br>
               I'm Dana. Welcome to my site! While initially just being an assignment
@@ -27,7 +26,9 @@
               a break-down of the structure of this website</a>.
               <br><strong>Thank you for visiting!</strong></h2>
 
-                <a id="blog-btn" class="btn btn-default" href="{% url 'blog' %}"><strong>Check out some posts!</strong></a>
+              <!-- <a id="blog-btn" class="btn btn-default" href="{% url 'blog' %}"><strong>Check out some posts!</strong></a> -->
+              <!-- <button class="btn btn1" type="button">Button</button> -->
+              <button class="button button1" onclick="window.location.href='{% url 'blog' %}';"><strong>Check out some posts!</strong></button>
           </div>
         </div>
       {% endblock %}
