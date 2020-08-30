@@ -263,6 +263,7 @@ button, button.btn {
 }
 .button1 {
   background-color: #F1E0C7;
+  transition: 0.4s ease;
 }
 .button1:hover {
   background-color: #3C7595;
