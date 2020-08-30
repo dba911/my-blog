@@ -68,7 +68,6 @@ img.home-photo {
   font-size: 30pt;
 }
 .intro a {
-  text-align: justify;
   line-height: 1.5;
   font-size: 30pt;
   color: #4688AF;
@@ -199,7 +198,7 @@ h2 {
   right: 0;
   top: 40%;
   text-align: center;
-  width: 60%;
+  width: 90%;
 }
 .title h2 a {
   color: #F1E0C7;
